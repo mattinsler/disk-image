@@ -1,0 +1,13 @@
+{
+  "name": "disk-image",
+  "description": "",
+  "version": "0.0.0",
+  "main": "src",
+  "scripts": {
+    "build": "node src/build-run.js > bin/run-disk-image.js",
+    "prepublish": "yarn build"
+  },
+  "dependencies": {
+    "metro-memory-fs": "^0.65.2"
+  }
+}
