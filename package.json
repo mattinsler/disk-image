@@ -3,11 +3,22 @@
   "description": "",
   "version": "0.0.0",
   "main": "src",
+  "bin": {
+    "disk-image": "./bin/disk-image.js",
+    "run-disk-image": "./bin/run-disk-image.js"
+  },
   "scripts": {
-    "build": "node src/build-run.js > bin/run-disk-image.js",
-    "prepublish": "yarn build"
+    "build": "webpack --config webpack.config.js --mode production"
   },
   "dependencies": {
-    "metro-memory-fs": "^0.65.2"
+    "metro-memory-fs": "^0.65.2",
+    "yargs": "16.2.0"
+  },
+  "devDependencies": {
+    "@babel/core": "7.13.10",
+    "@babel/plugin-proposal-class-properties": "7.13.0",
+    "babel-loader": "8.2.2",
+    "webpack": "^5.26.3",
+    "webpack-cli": "^4.5.0"
   }
 }

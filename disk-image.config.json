@@ -1,9 +1,0 @@
-{
-  "serve": [
-    "/usr/local/src"
-  ],
-  "files": {
-    "/usr/local/src": "example",
-    "/usr/local/src/node_modules": "node_modules"
-  }
-}
